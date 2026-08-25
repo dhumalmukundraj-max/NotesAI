@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudyNotes AI
 
-## Getting Started
+📚 StudyNotes AI
 
-First, run the development server:
+Your Notes. Your Knowledge. Your AI Study Partner.
 
-```bash
+StudyNotes AI is an AI-powered study platform for students to discover, upload, save, and learn from study notes.
+
+✨ Features
+
+- 🔍 Search and filter notes by subject, topic, branch & semester
+- 📤 Upload and share study materials
+- ⭐ Save/bookmark useful notes
+- 📥 View and download notes
+- 🤖 AI Study Assistant for study-related questions
+- 📝 AI-generated summaries, MCQs, exam answers & viva questions
+- 🔐 Secure authentication with Supabase
+- 📊 Student dashboard
+- 🛡️ Admin & content management
+
+🛠️ Tech Stack
+
+- Frontend: Next.js, React, TypeScript, Tailwind CSS
+- Backend: Supabase
+- Database: PostgreSQL
+- Storage: Supabase Storage
+- Authentication: Supabase Auth
+- AI: OpenAI API
+- Deployment: Vercel
+- Version Control: GitHub
+
+🏗️ Architecture
+
+Student
+   ↓
+Next.js → Vercel
+   ↓
+Supabase ─── PostgreSQL
+   ├──────── Auth
+   └──────── Storage
+   ↓
+AI API
+
+⚙️ Environment Variables
+
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_key
+OPENAI_API_KEY=your_openai_key
+
+⚠️ Never commit ".env.local" or expose secret API keys.
+
+🚀 Run Locally
+
+git clone https://github.com/yourusername/studynotes-ai.git
+cd studynotes-ai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open "http://localhost:3000".
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔮 Future Plans
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 📄 Ask AI questions about uploaded PDFs
+- 🧠 RAG-based learning
+- 🎯 AI quizzes & flashcards
+- 🔎 Semantic search
+- 📊 Personalized learning analytics
 
-## Learn More
+👨‍💻 Author
 
-To learn more about Next.js, take a look at the following resources:
+Mukundraj Dhumal
+Engineering Student | Developer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+GitHub -: https://github.com/dhumalmukundraj-max
+LinkedIn -: https://www.linkedin.com/in/mukundraj
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ Learn smarter. Share knowledge. Ask AI.
