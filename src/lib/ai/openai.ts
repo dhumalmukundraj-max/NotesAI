@@ -10,4 +10,4 @@ export const openai = apiKey
     })
   : null
 
-export const aiModel = isGemini ? 'gemini-1.5-flash' : 'gpt-4o-mini'
+export const aiModel = isGemini ? 'gemini-2.5-flash' : 'gpt-4o-mini'
